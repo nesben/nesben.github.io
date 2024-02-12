@@ -1,1 +1,309 @@
-<h1>>Hello World, test :D</h1>
+<body>
+    <div class="main-container">
+        <div id="first-container">
+            <h1>Vil du være min valentine?</h1>
+            <div class="img-container">
+                <img src="https://i.giphy.com/vRwmQ4az7ugWk.webp" />
+            </div>
+            <div class="button-container first-btn-container">
+                <button id="confirm-yes" onclick="handleFirstQuestion()">Ja!!</button>
+                <button id="confirm-no">Nej...</button>
+            </div>
+        </div>
+
+        <div id="second-container">
+            <h1>YAYY!</h1>
+            <div class="img-container">
+                <img src="https://c.tenor.com/arqlNu8gyJYAAAAC/tenor.gif" />
+            </div>
+            <div class="button-container">
+                <button onclick="handleSecondQuestion()">Næste 💖</button>
+            </div>
+        </div>
+
+        <div id="third-container">
+            <h1>Hvad vil du have at spise?</h1>
+            <div class="img-grid">
+                <div class="grid-element">
+                    <h3>Sushi</h3>
+                    <label for="food-sushi">
+                        <img src="https://www.cbc.ca/strombo/content/images/Japanese_Sushi_Cat2.jpg" />
+                    </label>
+                    <br>
+                    <input id="food-sushi" type="checkbox" name="food-btn" />
+                    <input id="food-sushi-text" value="Sushi" style="display: none"/>
+                </div>
+
+                <div class="grid-element">
+                    <h3>Burger</h3>
+                    <label for="food-burger">
+                        <img src="https://i.redd.it/3zwqz4dvxqj81.jpg" />
+                    </label>
+                    <br>
+                    <input id="food-burger" type="checkbox" name="food-btn" />
+                    <input id="food-burger-text" value="Burger" style="display: none"/>
+                </div>
+
+                <div class="grid-element">
+                    <h3>Kinesisk</h3>
+                    <label for="food-chinese">
+                        <img src="https://i.pinimg.com/564x/46/b6/d7/46b6d7d9a140a087aa6172202ff3f79c.jpg" />
+                    </label>
+                    <br>
+                    <input id="food-chinese" type="checkbox" name="food-btn" />
+                    <input id="food-chinese-text" value="Kinesisk" style="display: none"/>
+                </div>
+
+                <div class="grid-element">
+                    <h3>Pizza</h3>
+                    <label for="food-pizza">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXl6OPDcibpP5Zrt517tzwh-aacbzh9ZrX4qqhDZFTDA&s" />
+                    </label>
+                    <br>
+                    <input id="food-pizza" type="checkbox" name="food-btn" />
+                    <input id="food-pizza-text" value="Pizza" style="display: none"/>
+                </div>
+
+                <div class="grid-element">
+                    <h3>Italiensk</h3>
+                    <label for="food-italian">
+                        <img src="https://scontent.faal1-2.fna.fbcdn.net/v/t39.30808-6/319502423_545327334117652_258597340254750714_n.jpg?stp=dst-jpg_s640x640&_nc_cat=108&ccb=1-7&_nc_sid=3635dc&_nc_ohc=qIF8E1hyn9EAX8Rk6my&_nc_ht=scontent.faal1-2.fna&oh=00_AfDBRA4GcybVxfhD98W3ZVrvuCC6PLjxVjg5CsyTP-Jqrg&oe=65D008E9" />
+                    </label>
+                    <br>
+                    <input id="food-italian" type="checkbox" name="food-btn" />
+                    <input id="food-italian-text" value="Italiensk" style="display: none"/>
+                </div>
+
+                <div class="grid-element">
+                    <h3>Hotdogs</h3>
+                    <label for="food-hotdog">
+                        <img src="https://pbs.twimg.com/media/DEpB8_wV0AADGV5.jpg" />
+                    </label>
+                    <br>
+                    <input id="food-hotdog" type="checkbox" name="food-btn" />
+                    <input id="food-hotdog-text" value="Hotdogs" style="display: none"/>
+                </div>
+                
+            </div>
+            <div class="button-container">
+                <button onclick="handleThirdQuestion()">Næste 💖</button>
+            </div>
+        </div>
+
+        <div id="fourth-container">
+            <h1>Hvad med dessert?</h1>
+            <div class="img-grid">
+                <div class="grid-element">
+                    <h3>Is</h3>
+                    <label for="dessert-icecream">
+                        <img src="https://d.newsweek.com/en/full/2241179/cat-trying-ice-cream-cone.webp?w=790&f=4ab47ebc2db8a2ecc50cf5fc463405ee" />
+                    </label>
+                    <br>
+                    <input id="dessert-icecream" type="checkbox" name="dessert-btn" />
+                    <input id="dessert-icecream-text" value="Is" style="display: none"/>
+                </div>
+
+                <div class="grid-element">
+                    <h3>Mochi</h3>
+                    <label for="dessert-mochi">
+                        <img src="https://i.ytimg.com/vi/hYLiSIOaRy8/maxresdefault.jpg" />
+                    </label>
+                    <br>
+                    <input id="dessert-mochi" type="checkbox" name="dessert-btn" />
+                    <input id="dessert-mochi-text" value="Mochi" style="display: none"/>
+                </div>
+
+                <div class="grid-element">
+                    <h3>Kage</h3>
+                    <label for="dessert-cake">
+                        <img src="https://www.feedmypaws.com/cdn/shop/products/Cakebubbles_00c7f27c-79d0-4d10-be70-137637db59c6.jpg?v=1632543230" />
+                    </label>
+                    <br>
+                    <input id="dessert-cake" type="checkbox" name="dessert-btn" />
+                    <input id="dessert-cake-text" value="Kage" style="display: none"/>
+                </div>
+
+                <div class="grid-element">
+                    <h3>Panna cotta</h3>
+                    <label for="dessert-pannacotta">
+                        <img src="https://i.ytimg.com/vi/m6OzKJ5e6mc/maxresdefault.jpg" />
+                    </label>
+                    <br>
+                    <input id="dessert-pannacotta" type="checkbox" name="dessert-btn" />
+                    <input id="dessert-pannacotta-text" value="Panna cotta" style="display: none"/>
+                </div>
+
+                <div class="grid-element">
+                    <h3>Tiramisu</h3>
+                    <label for="dessert-tiramisu">
+                        <img src="https://pbs.twimg.com/media/EO8EfcoVAAAbH57.jpg:large" />
+                    </label>
+                    <br>
+                    <input id="dessert-tiramisu" type="checkbox" name="dessert-btn" />
+                    <input id="dessert-tiramisu-text" value="Tiramisu" style="display: none"/>
+                </div>
+
+                <div class="grid-element">
+                    <h3>Pandekager/vafler</h3>
+                    <label for="dessert-pancake">
+                        <img src="https://theawesomer.com/photos/2017/09/pancake_cat_1.jpg" />
+                    </label>
+                    <br>
+                    <input id="dessert-pancake" type="checkbox" name="dessert-btn" />
+                    <input id="dessert-pancake-text" value="Pandekager/vafler" style="display: none"/>
+                </div>
+
+                <div class="grid-element">
+                    <h3>Cheesecake</h3>
+                    <label for="dessert-cheesecake">
+                        <img src="https://c8.alamy.com/comp/2H24HWH/cherry-cheesecake-and-cat-2H24HWH.jpg" />
+                    </label>
+                    <br>
+                    <input id="dessert-cheesecake" type="checkbox" name="dessert-btn" />
+                    <input id="dessert-cheesecake-text" value="Cheesecake" style="display: none"/>
+                </div>
+
+                <div class="grid-element">
+                    <h3>Mousse</h3>
+                    <label for="dessert-mousse">
+                        <img src="https://i3.wp.com/lifecurrentsblog.com/wp-content/uploads/2014/11/MG_0061.jpg" />
+                    </label>
+                    <br>
+                    <input id="dessert-mousse" type="checkbox" name="dessert-btn" />
+                    <input id="dessert-mousse-text" value="Mousse" style="display: none"/>
+                </div>
+                
+            </div>
+            <div class="button-container">
+                <button onclick="handleFourthQuestion()">Næste 💖</button>
+            </div>
+        </div>
+
+        <div id="fifth-container">
+            <h1>Så har vi en date!</h1>
+            <img src="https://i.pinimg.com/originals/ca/08/db/ca08dbeee8a7605d1ddc41fb2517193e.gif" />
+
+            <div class="details-container">
+                <p>Hvornår: Onsdag den 14. februar 💖</p>
+                <p id="details-food">Mad: </p>
+                <p id="details-dessert">Dessert: </p>
+                <p>Drikkevarer: Alt hjertet begærer</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+<script type="text/javascript">
+    function handleFirstQuestion(evt) {
+        // Hide elements and show next page
+        document.getElementById('first-container').style.display = 'none';
+        document.getElementById('second-container').style.display = 'block';
+    }
+
+    function handleSecondQuestion() {
+        document.getElementById('second-container').style.display = 'none';
+        document.getElementById('third-container').style.display = 'block';
+    }
+
+    function handleThirdQuestion() {
+        document.getElementById('third-container').style.display = 'none';
+        document.getElementById('fourth-container').style.display = 'block';
+    }
+
+    function handleFourthQuestion() {
+        document.getElementById('fourth-container').style.display = 'none';
+        document.getElementById('fifth-container').style.display = 'block';
+
+        var foodSelectionId = document.querySelectorAll('input[name=food-btn]:checked')[0]['id'];
+        var foodSelectionText = document.getElementById(foodSelectionId + '-text').value;
+        document.getElementById('details-food').innerHTML = "Mad: " + foodSelectionText;
+
+        var dessertSelectionId = document.querySelectorAll('input[name=dessert-btn]:checked')[0]['id'];
+        var dessertSelectionText = document.getElementById(dessertSelectionId + '-text').value;
+        document.getElementById('details-dessert').innerHTML = "Dessert: " + dessertSelectionText;
+    }
+
+    window.onload = function() {
+        const button = document.getElementById("confirm-no");
+
+        console.log(button);
+        const animateMove = (element, prop, pixels) =>
+        anime({
+            targets: element,
+            [prop]: `${pixels}px`,
+            easing: "easeOutCirc"
+        });
+
+        ["mouseover", "click"].forEach(function (el) {
+            button.addEventListener(el, function (event) {
+                const top = getRandomNumber(window.innerHeight - this.offsetHeight);
+                const left = getRandomNumber(window.innerWidth - this.offsetWidth);
+
+                animateMove(this, "left", left).play();
+                animateMove(this, "top", top).play();
+            });
+        });
+
+        const getRandomNumber = (num) => {
+            return Math.floor(Math.random() * (num + 1));
+        };
+    }
+</script>
+
+<style>
+    body, html {
+        margin: 0;
+        background: pink;
+        color: rgb(236, 151, 151);
+    }
+
+    #second-container, #third-container, #fourth-container, #fifth-container {
+        display: none;
+    }
+
+    .main-container {
+        text-align: center;
+        height: 100vh;
+        width: 100vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .img-container img {
+        width: 300px;
+    }
+
+    .button-container {
+        margin-top: 20px;
+    }
+
+    .first-btn-container {
+        width: 93%;
+    }
+
+    .button-container button {
+        padding: 10px 30px;
+        border: none;
+        background: rgb(236, 151, 151);
+        color: #fff;
+    }
+
+    #confirm-yes {
+        margin-right: 20px;
+    }
+
+    #confirm-no {
+        position: absolute;
+    }
+
+    .img-grid {
+        display: grid;
+        column-gap: 50px;
+        grid-template-columns: auto auto auto;
+    }
+
+    .img-grid img {
+        width: 200px;
+    }
+</style>
